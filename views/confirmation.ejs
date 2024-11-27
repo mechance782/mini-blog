@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog</title>
+    <link rel="stylesheet" href="/styles/confirmations.css">
+</head>
+<body>
+    <section id="mainSection">
+        <h1>Thanks for posting, <%= post.author %>!</h1>
+        
+        <p>This is how your post will appear: </p>
+        <section id = "postSection">
+            <h3><%= post.title %></h3>
+            <p id="author">Author: <%= post.author %></p>
+            <hr>
+            <p id="content"><%= post.content %></p>
+        </section>
+
+        <hr>
+        <footer>
+            <a href="/entries">View All Entries</a>
+        </footer>
+    </section>
+</body>
+</html>

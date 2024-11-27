@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog</title>
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+    <fieldset>
+        <form action="/submit" method="POST">
+            <legend>Create a New Post</legend>
+            <input type="text" id="author" name="author" placeholder="Author Name" value="<%=data.author %>">
+            <input type="text" id="title" name="title" placeholder="Post Title" value="<%=data.title %>">
+            <textarea id="content" name="content" placeholder="Write your post here..." value="<%=data.content%>"></textarea> 
+            <% if (errors) { %>
+                <ul class="errors">
+                    <% errors.forEach((error) => { %>
+                        <li><%= error %></li>
+                    <% }); %>
+                </ul>
+            <% } %>
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html>

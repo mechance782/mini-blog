@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(71, 140, 11);
+    margin: auto 1em;
+}
+
+footer {
+    margin: auto 2em;
+}
+
+#page {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 1em lightslategray;
+    padding: 1em 0;
+    margin: auto;
+    width: 100%;
+}
+
+div {
+    margin: 1em 2em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 1em 1em;
+    width: 50%;
+}
+
+h3 {
+    margin: 0 0;
+
+}
+#author {
+    margin: 0.25em 0;
+    font-size: .75em;
+    color: lightslategray;
+}
+
+hr {
+    border: .5px solid lightslategray;
+}

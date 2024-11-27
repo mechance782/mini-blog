@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog</title>
+    <link rel="stylesheet" href="/styles/entries.css">
+</head>
+<body>
+    <div id="page">
+        <h1>Post History</h1>
+        <% if (posts.length !== 0) { %>
+        <% for (let i = 0; i < posts.length; i++) { %>
+            <div>
+                <h3><%= posts[i].title %></h3>
+                <p id="author">Author: <%= posts[i].author %></p>
+                <hr>
+                <p><%= posts[i].content %></p>
+            </div>
+        <% } %>
+        <% } else { %>
+            <p>No Posts Found</p>
+        <% } %>
+
+        <hr>
+        <footer>
+            <a href="/">Create a New Post</a>
+        </footer>
+    </div>
+</body>
+</html>
